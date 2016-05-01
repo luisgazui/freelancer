@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\API;
+namespace FreelancerOnline\Http\Requests\API;
 
-use App\Models\paises;
+use FreelancerOnline\Models\paises;
 use InfyOm\Generator\Request\APIRequest;
 
 class CreatepaisesAPIRequest extends APIRequest

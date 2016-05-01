@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FreelancerOnline\Http\Controllers;
 
-use App\DataTables\bancosDataTable;
-use App\Http\Requests;
-use App\Http\Requests\CreatebancosRequest;
-use App\Http\Requests\UpdatebancosRequest;
-use App\Repositories\bancosRepository;
+use FreelancerOnline\DataTables\bancosDataTable;
+use FreelancerOnline\Http\Requests;
+use FreelancerOnline\Http\Requests\CreatebancosRequest;
+use FreelancerOnline\Http\Requests\UpdatebancosRequest;
+use FreelancerOnline\Repositories\bancosRepository;
 use Flash;
 use InfyOm\Generator\Controller\AppBaseController;
 use Response;

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FreelancerOnline\Http\Controllers;
 
-use App\DataTables\categoriasDataTable;
-use App\Http\Requests;
-use App\Http\Requests\CreatecategoriasRequest;
-use App\Http\Requests\UpdatecategoriasRequest;
-use App\Repositories\categoriasRepository;
+use FreelancerOnline\DataTables\categoriasDataTable;
+use FreelancerOnline\Http\Requests;
+use FreelancerOnline\Http\Requests\CreatecategoriasRequest;
+use FreelancerOnline\Http\Requests\UpdatecategoriasRequest;
+use FreelancerOnline\Repositories\categoriasRepository;
 use Flash;
 use InfyOm\Generator\Controller\AppBaseController;
 use Response;

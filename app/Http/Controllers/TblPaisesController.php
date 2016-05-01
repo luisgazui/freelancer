@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FreelancerOnline\Http\Controllers;
 
-use App\DataTables\TblPaisesDataTable;
-use App\Http\Requests;
-use App\Http\Requests\CreateTblPaisesRequest;
-use App\Http\Requests\UpdateTblPaisesRequest;
-use App\Repositories\TblPaisesRepository;
+use FreelancerOnline\DataTables\TblPaisesDataTable;
+use FreelancerOnline\Http\Requests;
+use FreelancerOnline\Http\Requests\CreateTblPaisesRequest;
+use FreelancerOnline\Http\Requests\UpdateTblPaisesRequest;
+use FreelancerOnline\Repositories\TblPaisesRepository;
 use Flash;
 use InfyOm\Generator\Controller\AppBaseController;
 use Response;

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Requests;
+namespace FreelancerOnline\Http\Requests;
 
-use App\Http\Requests\Request;
-use App\Models\categorias;
+use FreelancerOnline\Http\Requests\Request;
+use FreelancerOnline\Models\categorias;
 
 class UpdatecategoriasRequest extends Request
 {

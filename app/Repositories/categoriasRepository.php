@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace FreelancerOnline\Repositories;
 
-use App\Models\categorias;
+use FreelancerOnline\Models\categorias;
 use InfyOm\Generator\Common\BaseRepository;
 
 class categoriasRepository extends BaseRepository

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\API;
+namespace FreelancerOnline\Http\Requests\API;
 
-use App\Models\bancos;
+use FreelancerOnline\Models\bancos;
 use InfyOm\Generator\Request\APIRequest;
 
 class UpdatebancosAPIRequest extends APIRequest

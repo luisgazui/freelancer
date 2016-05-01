@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FreelancerOnline\Http\Controllers;
 
-use App\DataTables\experienciaDataTable;
-use App\Http\Requests;
-use App\Http\Requests\CreateexperienciaRequest;
-use App\Http\Requests\UpdateexperienciaRequest;
-use App\Repositories\experienciaRepository;
+use FreelancerOnline\DataTables\experienciaDataTable;
+use FreelancerOnline\Http\Requests;
+use FreelancerOnline\Http\Requests\CreateexperienciaRequest;
+use FreelancerOnline\Http\Requests\UpdateexperienciaRequest;
+use FreelancerOnline\Repositories\experienciaRepository;
 use Flash;
 use InfyOm\Generator\Controller\AppBaseController;
 use Response;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\API;
+namespace FreelancerOnline\Http\Requests\API;
 
-use App\Models\Documentos;
+use FreelancerOnline\Models\Documentos;
 use InfyOm\Generator\Request\APIRequest;
 
 class CreateDocumentosAPIRequest extends APIRequest

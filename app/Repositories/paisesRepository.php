@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace FreelancerOnline\Repositories;
 
-use App\Models\paises;
+use FreelancerOnline\Models\paises;
 use InfyOm\Generator\Common\BaseRepository;
 
 class paisesRepository extends BaseRepository

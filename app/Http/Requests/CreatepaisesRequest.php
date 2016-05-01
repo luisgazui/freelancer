@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Requests;
+namespace FreelancerOnline\Http\Requests;
 
-use App\Http\Requests\Request;
-use App\Models\paises;
+use FreelancerOnline\Http\Requests\Request;
+use FreelancerOnline\Models\paises;
 
 class CreatepaisesRequest extends Request
 {

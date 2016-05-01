@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace FreelancerOnline\Http\Controllers\API;
 
-use App\Http\Requests\API\CreateDocumentosAPIRequest;
-use App\Http\Requests\API\UpdateDocumentosAPIRequest;
-use App\Models\Documentos;
-use App\Repositories\DocumentosRepository;
+use FreelancerOnline\Http\Requests\API\CreateDocumentosAPIRequest;
+use FreelancerOnline\Http\Requests\API\UpdateDocumentosAPIRequest;
+use FreelancerOnline\Models\Documentos;
+use FreelancerOnline\Repositories\DocumentosRepository;
 use Illuminate\Http\Request;
-use App\Http\Controllers\AppBaseController;
+use FreelancerOnline\Http\Controllers\AppBaseController;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
 use InfyOm\Generator\Utils\ResponseUtil;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -15,7 +15,7 @@ use Response;
 
 /**
  * Class DocumentosController
- * @package App\Http\Controllers\API
+ * @package FreelancerOnline\Http\Controllers\API
  */
 
 class DocumentosAPIController extends AppBaseController

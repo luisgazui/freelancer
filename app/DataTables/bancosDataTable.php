@@ -1,8 +1,8 @@
 <?php
 
-namespace App\DataTables;
+namespace FreelancerOnline\DataTables;
 
-use App\Models\bancos;
+use FreelancerOnline\Models\bancos;
 use Form;
 use Yajra\Datatables\Services\DataTable;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace FreelancerOnline\Http\Controllers\API;
 
-use App\Http\Requests\API\CreatepaisesAPIRequest;
-use App\Http\Requests\API\UpdatepaisesAPIRequest;
-use App\Models\paises;
-use App\Repositories\paisesRepository;
+use FreelancerOnline\Http\Requests\API\CreatepaisesAPIRequest;
+use FreelancerOnline\Http\Requests\API\UpdatepaisesAPIRequest;
+use FreelancerOnline\Models\paises;
+use FreelancerOnline\Repositories\paisesRepository;
 use Illuminate\Http\Request;
-use App\Http\Controllers\AppBaseController;
+use FreelancerOnline\Http\Controllers\AppBaseController;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
 use InfyOm\Generator\Utils\ResponseUtil;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -15,7 +15,7 @@ use Response;
 
 /**
  * Class paisesController
- * @package App\Http\Controllers\API
+ * @package FreelancerOnline\Http\Controllers\API
  */
 
 class paisesAPIController extends AppBaseController

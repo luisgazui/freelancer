@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FreelancerOnline\Http\Controllers;
 
-use App\Http\Requests;
+use FreelancerOnline\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

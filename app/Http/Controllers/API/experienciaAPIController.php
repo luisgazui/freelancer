@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace FreelancerOnline\Http\Controllers\API;
 
-use App\Http\Requests\API\CreateexperienciaAPIRequest;
-use App\Http\Requests\API\UpdateexperienciaAPIRequest;
-use App\Models\experiencia;
-use App\Repositories\experienciaRepository;
+use FreelancerOnline\Http\Requests\API\CreateexperienciaAPIRequest;
+use FreelancerOnline\Http\Requests\API\UpdateexperienciaAPIRequest;
+use FreelancerOnline\Models\experiencia;
+use FreelancerOnline\Repositories\experienciaRepository;
 use Illuminate\Http\Request;
-use App\Http\Controllers\AppBaseController;
+use FreelancerOnline\Http\Controllers\AppBaseController;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
 use InfyOm\Generator\Utils\ResponseUtil;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -15,7 +15,7 @@ use Response;
 
 /**
  * Class experienciaController
- * @package App\Http\Controllers\API
+ * @package FreelancerOnline\Http\Controllers\API
  */
 
 class experienciaAPIController extends AppBaseController

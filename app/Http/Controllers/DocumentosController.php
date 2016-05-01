@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace FreelancerOnline\Http\Controllers;
 
-use App\DataTables\DocumentosDataTable;
-use App\Http\Requests;
-use App\Http\Requests\CreateDocumentosRequest;
-use App\Http\Requests\UpdateDocumentosRequest;
-use App\Repositories\DocumentosRepository;
+use FreelancerOnline\DataTables\DocumentosDataTable;
+use FreelancerOnline\Http\Requests;
+use FreelancerOnline\Http\Requests\CreateDocumentosRequest;
+use FreelancerOnline\Http\Requests\UpdateDocumentosRequest;
+use FreelancerOnline\Repositories\DocumentosRepository;
 use Flash;
 use InfyOm\Generator\Controller\AppBaseController;
 use Response;

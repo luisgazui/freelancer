@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace FreelancerOnline\Repositories;
 
-use App\Models\TblPaises;
+use FreelancerOnline\Models\TblPaises;
 use InfyOm\Generator\Common\BaseRepository;
 
 class TblPaisesRepository extends BaseRepository

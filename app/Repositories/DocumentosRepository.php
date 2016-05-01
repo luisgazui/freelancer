@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace FreelancerOnline\Repositories;
 
-use App\Models\Documentos;
+use FreelancerOnline\Models\Documentos;
 use InfyOm\Generator\Common\BaseRepository;
 
 class DocumentosRepository extends BaseRepository

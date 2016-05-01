@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace FreelancerOnline\Http\Controllers\Auth;
 
-use App\User;
+use FreelancerOnline\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use FreelancerOnline\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

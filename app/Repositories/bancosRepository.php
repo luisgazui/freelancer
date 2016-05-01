@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace FreelancerOnline\Repositories;
 
-use App\Models\bancos;
+use FreelancerOnline\Models\bancos;
 use InfyOm\Generator\Common\BaseRepository;
 
 class bancosRepository extends BaseRepository

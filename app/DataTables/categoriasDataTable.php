@@ -1,8 +1,8 @@
 <?php
 
-namespace App\DataTables;
+namespace FreelancerOnline\DataTables;
 
-use App\Models\categorias;
+use FreelancerOnline\Models\categorias;
 use Form;
 use Yajra\Datatables\Services\DataTable;
 

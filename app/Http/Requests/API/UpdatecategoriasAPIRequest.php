@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\API;
+namespace FreelancerOnline\Http\Requests\API;
 
-use App\Models\categorias;
+use FreelancerOnline\Models\categorias;
 use InfyOm\Generator\Request\APIRequest;
 
 class UpdatecategoriasAPIRequest extends APIRequest

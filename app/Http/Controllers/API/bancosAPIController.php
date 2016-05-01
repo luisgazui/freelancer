@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace FreelancerOnline\Http\Controllers\API;
 
-use App\Http\Requests\API\CreatebancosAPIRequest;
-use App\Http\Requests\API\UpdatebancosAPIRequest;
-use App\Models\bancos;
-use App\Repositories\bancosRepository;
+use FreelancerOnline\Http\Requests\API\CreatebancosAPIRequest;
+use FreelancerOnline\Http\Requests\API\UpdatebancosAPIRequest;
+use FreelancerOnline\Models\bancos;
+use FreelancerOnline\Repositories\bancosRepository;
 use Illuminate\Http\Request;
-use App\Http\Controllers\AppBaseController;
+use FreelancerOnline\Http\Controllers\AppBaseController;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
 use InfyOm\Generator\Utils\ResponseUtil;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -15,7 +15,7 @@ use Response;
 
 /**
  * Class bancosController
- * @package App\Http\Controllers\API
+ * @package FreelancerOnline\Http\Controllers\API
  */
 
 class bancosAPIController extends AppBaseController

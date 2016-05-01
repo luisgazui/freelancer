@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace FreelancerOnline\Http\Controllers\API;
 
-use App\Http\Requests\API\CreatecategoriasAPIRequest;
-use App\Http\Requests\API\UpdatecategoriasAPIRequest;
-use App\Models\categorias;
-use App\Repositories\categoriasRepository;
+use FreelancerOnline\Http\Requests\API\CreatecategoriasAPIRequest;
+use FreelancerOnline\Http\Requests\API\UpdatecategoriasAPIRequest;
+use FreelancerOnline\Models\categorias;
+use FreelancerOnline\Repositories\categoriasRepository;
 use Illuminate\Http\Request;
-use App\Http\Controllers\AppBaseController;
+use FreelancerOnline\Http\Controllers\AppBaseController;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
 use InfyOm\Generator\Utils\ResponseUtil;
 use Prettus\Repository\Criteria\RequestCriteria;
@@ -15,7 +15,7 @@ use Response;
 
 /**
  * Class categoriasController
- * @package App\Http\Controllers\API
+ * @package FreelancerOnline\Http\Controllers\API
  */
 
 class categoriasAPIController extends AppBaseController

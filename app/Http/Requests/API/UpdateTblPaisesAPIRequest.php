@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\API;
+namespace FreelancerOnline\Http\Requests\API;
 
-use App\Models\TblPaises;
+use FreelancerOnline\Models\TblPaises;
 use InfyOm\Generator\Request\APIRequest;
 
 class UpdateTblPaisesAPIRequest extends APIRequest

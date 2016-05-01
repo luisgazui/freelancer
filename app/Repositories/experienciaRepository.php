@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace FreelancerOnline\Repositories;
 
-use App\Models\experiencia;
+use FreelancerOnline\Models\experiencia;
 use InfyOm\Generator\Common\BaseRepository;
 
 class experienciaRepository extends BaseRepository

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\API;
+namespace FreelancerOnline\Http\Requests\API;
 
-use App\Models\experiencia;
+use FreelancerOnline\Models\experiencia;
 use InfyOm\Generator\Request\APIRequest;
 
 class CreateexperienciaAPIRequest extends APIRequest
