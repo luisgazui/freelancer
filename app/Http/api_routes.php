@@ -13,16 +13,33 @@
 
 
 
-Route::resource('paises', 'paisesAPIController');
-
-Route::resource('documentos', 'DocumentosAPIController');
-
-Route::resource('documentos', 'DocumentosAPIController');
-
-Route::resource('bancos', 'bancosAPIController');
-
-Route::resource('experiencias', 'experienciaAPIController');
-
-Route::resource('categorias', 'categoriasAPIController');
 
 Route::resource('tblPaises', 'TblPaisesAPIController');
+
+Route::resource('tblBancos', 'TblBancosAPIController');
+
+Route::resource('tblBancos', 'TblBancosAPIController');
+
+Route::resource('tblBancos', 'TblBancosAPIController');
+
+Route::resource('tblDocumentos', 'TblDocumentosAPIController');
+
+Route::resource('tblDocumentos', 'TblDocumentosAPIController');
+
+Route::resource('tblExperiencias', 'TblExperienciaAPIController');
+
+Route::resource('tblCategorias', 'TblCategoriasAPIController');
+
+Route::resource('tblPalabras', 'TblPalabrasAPIController');
+
+Route::resource('tblMascaras', 'TblMascaraAPIController');
+
+Route::resource('tblMonedas', 'TblMonedasAPIController');
+
+Route::resource('tblTitulos', 'TblTitulosAPIController');
+
+Route::resource('tblSubCategorias', 'TblSubCategoriasAPIController');
+
+Route::resource('tblDuracions', 'TblDuracionAPIController');
+
+Route::resource('tblSanciones', 'TblSancionesAPIController');

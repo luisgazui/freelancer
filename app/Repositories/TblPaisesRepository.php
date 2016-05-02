@@ -11,7 +11,7 @@ class TblPaisesRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'Pais'
+        'Nombre'
     ];
 
     /**

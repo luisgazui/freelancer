@@ -53,19 +53,19 @@ return [
 
     'namespace' => [
 
-        'model'             => 'App\Models',
+        'model'             => 'FreelancerOnline\Models',
 
-        'datatables'        => 'App\DataTables',
+        'datatables'        => 'FreelancerOnline\DataTables',
 
-        'repository'        => 'App\Repositories',
+        'repository'        => 'FreelancerOnline\Repositories',
 
-        'controller'        => 'App\Http\Controllers',
+        'controller'        => 'FreelancerOnline\Http\Controllers',
 
-        'api_controller'    => 'App\Http\Controllers\API',
+        'api_controller'    => 'FreelancerOnline\Http\Controllers\API',
 
-        'request'           => 'App\Http\Requests',
+        'request'           => 'FreelancerOnline\Http\Requests',
 
-        'api_request'       => 'App\Http\Requests\API',
+        'api_request'       => 'FreelancerOnline\Http\Requests\API',
     ],
 
     /*
@@ -108,7 +108,7 @@ return [
 
         'softDelete' => true,
 
-        'tables_searchable_default' => false,
+        'tables_searchable_default' => true,
     ],
 
     /*

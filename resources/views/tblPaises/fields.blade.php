@@ -1,7 +1,7 @@
-<!-- Pais Field -->
+<!-- Nombre Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('Pais', 'Pais:') !!}
-    {!! Form::text('Pais', null, ['class' => 'form-control']) !!}
+    {!! Form::label('Nombre', 'Nombre:') !!}
+    {!! Form::text('Nombre', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

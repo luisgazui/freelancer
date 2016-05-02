@@ -53,37 +53,26 @@ Route::post('password/reset', 'Auth\PasswordController@postReset');
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('documentos', 'DocumentosController');
-
-Route::resource('bancos', 'bancosController');
-
-Route::resource('experiencias', 'experienciaController');
-
-Route::resource('categorias', 'categoriasController');
-
 Route::resource('tblPaises', 'TblPaisesController');
 
-/*
-|--------------------------------------------------------------------------
-| API routes
-|--------------------------------------------------------------------------
-*/
+Route::resource('tblBancos', 'TblBancosController');
 
-Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
-    Route::group(['prefix' => 'v1'], function () {
-        require config('infyom.laravel_generator.path.api_routes');
-    });
-});
+Route::resource('tblDocumentos', 'TblDocumentosController');
 
+Route::resource('tblExperiencias', 'TblExperienciaController');
 
-/*
-|--------------------------------------------------------------------------
-| API routes
-|--------------------------------------------------------------------------
-*/
+Route::resource('tblCategorias', 'TblCategoriasController');
 
-Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
-    Route::group(['prefix' => 'v1'], function () {
-        require config('infyom.laravel_generator.path.api_routes');
-    });
-});
+Route::resource('tblPalabras', 'TblPalabrasController');
+
+Route::resource('tblMascaras', 'TblMascaraController');
+
+Route::resource('tblMonedas', 'TblMonedasController');
+
+Route::resource('tblTitulos', 'TblTitulosController');
+
+Route::resource('tblSubCategorias', 'TblSubCategoriasController');
+
+Route::resource('tblDuracions', 'TblDuracionController');
+
+Route::resource('tblSanciones', 'TblSancionesController');

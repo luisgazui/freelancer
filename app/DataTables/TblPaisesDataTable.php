@@ -87,7 +87,7 @@ class TblPaisesDataTable extends DataTable
     private function getColumns()
     {
         return [
-            'Pais' => ['name' => 'Pais', 'data' => 'Pais']
+            'Nombre' => ['name' => 'Nombre', 'data' => 'Nombre']
         ];
     }
 

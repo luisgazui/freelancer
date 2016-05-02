@@ -4,9 +4,9 @@
     <p>{!! $tblPaises->id !!}</p>
 </div>
 
-<!-- Pais Field -->
+<!-- Nombre Field -->
 <div class="form-group">
-    {!! Form::label('Pais', 'Pais:') !!}
-    <p>{!! $tblPaises->Pais !!}</p>
+    {!! Form::label('Nombre', 'Nombre:') !!}
+    <p>{!! $tblPaises->Nombre !!}</p>
 </div>
 

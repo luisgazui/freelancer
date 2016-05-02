@@ -1,8 +1,8 @@
 <?php
 
 use Faker\Factory as Faker;
-use App\Models\TblPaises;
-use App\Repositories\TblPaisesRepository;
+use FreelancerOnline\Models\TblPaises;
+use FreelancerOnline\Repositories\TblPaisesRepository;
 
 trait MakeTblPaisesTrait
 {
@@ -42,7 +42,7 @@ trait MakeTblPaisesTrait
         $fake = Faker::create();
 
         return array_merge([
-            'Pais' => $fake->word
+            'Nombre' => $fake->word
         ], $tblPaisesFields);
     }
 }

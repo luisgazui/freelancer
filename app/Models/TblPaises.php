@@ -16,8 +16,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *          format="int32"
  *      ),
  *      @SWG\Property(
- *          property="Pais",
- *          description="Pais",
+ *          property="Nombre",
+ *          description="Nombre",
  *          type="string"
  *      )
  * )
@@ -31,9 +31,13 @@ class TblPaises extends Model
 
     protected $dates = ['deleted_at'];
 
+    public function bancos_pais(){
+        // creamos una relación con el modelo de vehiculo
+        return $this->hasMany('tblbancos', 'pais_id');
+    }
 
     public $fillable = [
-        'Pais'
+        'Nombre'
     ];
 
     /**
@@ -42,7 +46,7 @@ class TblPaises extends Model
      * @var array
      */
     protected $casts = [
-        'Pais' => 'string'
+        'Nombre' => 'string'
     ];
 
     /**
