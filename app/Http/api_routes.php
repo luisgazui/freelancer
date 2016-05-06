@@ -43,3 +43,19 @@ Route::resource('tblSubCategorias', 'TblSubCategoriasAPIController');
 Route::resource('tblDuracions', 'TblDuracionAPIController');
 
 Route::resource('tblSanciones', 'TblSancionesAPIController');
+
+Route::resource('tblTelefonotipos', 'TblTelefonotipoAPIController');
+
+Route::resource('tblPlanes', 'TblPlanesAPIController');
+
+Route::resource('tblTipousuarios', 'TblTipousuarioAPIController');
+
+Route::resource('tblEspecialidads', 'TblEspecialidadAPIController');
+
+Route::resource('tblEspecialidads', 'TblEspecialidadAPIController');
+
+Route::resource('tblTipoInstrumentos', 'TblTipoInstrumentoAPIController');
+
+Route::resource('tblStatusproyectos', 'TblStatusproyectoAPIController');
+
+Route::resource('users', 'userAPIController');

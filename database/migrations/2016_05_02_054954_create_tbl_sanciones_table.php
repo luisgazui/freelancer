@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class Createtbl_sancionesTable extends Migration
+class CreatetblsancionesTable extends Migration
 {
 
     /**
@@ -16,10 +16,12 @@ class Createtbl_sancionesTable extends Migration
         Schema::create('tbl_sanciones', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('Severidad');
-            $table->String('Descripcion');
+            $table->String('DescripcionS');
             $table->integer('Duracion_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
+            $table->foreign('Duracion_id')->references('id')
+                ->on('tbl_duracions');
         });
     }
 

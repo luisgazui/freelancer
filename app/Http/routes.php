@@ -76,3 +76,24 @@ Route::resource('tblSubCategorias', 'TblSubCategoriasController');
 Route::resource('tblDuracions', 'TblDuracionController');
 
 Route::resource('tblSanciones', 'TblSancionesController');
+
+Route::resource('tblTelefonotipos', 'TblTelefonotipoController');
+
+Route::resource('tblPlanes', 'TblPlanesController');
+
+Route::resource('tblTipousuarios', 'TblTipousuarioController');
+
+Route::resource('tblEspecialidads', 'TblEspecialidadController');
+
+Route::resource('tblEspecialidads', 'TblEspecialidadController');
+
+Route::resource('tblTipoInstrumentos', 'TblTipoInstrumentoController');
+
+Route::resource('tblStatusproyectos', 'TblStatusproyectoController');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+
+Route::resource('users', 'userController');

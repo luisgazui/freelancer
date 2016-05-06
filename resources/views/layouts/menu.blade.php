@@ -81,3 +81,35 @@
     <a href="{!! route('tblSanciones.index') !!}">TblSanciones</a>
 </li>
 
+<li class="{{ Request::is('tblTelefonotipos*') ? 'active' : '' }}">
+    <a href="{!! route('tblTelefonotipos.index') !!}">TblTelefonotipos</a>
+</li>
+
+<li class="{{ Request::is('tblPlanes*') ? 'active' : '' }}">
+    <a href="{!! route('tblPlanes.index') !!}">TblPlanes</a>
+</li>
+
+<li class="{{ Request::is('tblTipousuarios*') ? 'active' : '' }}">
+    <a href="{!! route('tblTipousuarios.index') !!}">TblTipousuarios</a>
+</li>
+
+<li class="{{ Request::is('tblEspecialidads*') ? 'active' : '' }}">
+    <a href="{!! route('tblEspecialidads.index') !!}">TblEspecialidads</a>
+</li>
+
+<li class="{{ Request::is('tblEspecialidads*') ? 'active' : '' }}">
+    <a href="{!! route('tblEspecialidads.index') !!}">TblEspecialidads</a>
+</li>
+
+<li class="{{ Request::is('tblTipoInstrumentos*') ? 'active' : '' }}">
+    <a href="{!! route('tblTipoInstrumentos.index') !!}">TblTipoInstrumentos</a>
+</li>
+
+<li class="{{ Request::is('tblStatusproyectos*') ? 'active' : '' }}">
+    <a href="{!! route('tblStatusproyectos.index') !!}">TblStatusproyectos</a>
+</li>
+
+<li class="{{ Request::is('users*') ? 'active' : '' }}">
+    <a href="{!! route('users.index') !!}">users</a>
+</li>
+
