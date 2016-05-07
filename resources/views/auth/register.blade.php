@@ -10,6 +10,12 @@
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {!! csrf_field() !!}
 
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Pais</label>
+                            <div class="col-md-6">
+                                {!! Form::select('pais_id', ['1' => '1'], null, ['class' => 'form-control']) !!}
+                            </div>
+                        </div>
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label class="col-md-4 control-label">Name</label>
 
@@ -24,6 +30,22 @@
                             </div>
                         </div>
 
+                        <div class="form-group col-sm-6">
+                            {!! Form::label('lastname', 'Lastname:') !!}
+                            {!! Form::text('lastname', null, ['class' => 'form-control']) !!}
+                        </div>
+                        <div class="form-group col-sm-6">
+                            {!! Form::label('documento_id', 'Documento Id:') !!}
+                            {!! Form::select('documento_id', ['1' => '1'], null, ['class' => 'form-control']) !!}
+                        </div>
+                        <div class="form-group col-sm-6">
+                            {!! Form::label('documentoi', 'Documentoi:') !!}
+                            {!! Form::text('documentoi', null, ['class' => 'form-control']) !!}
+                        </div>
+                        <div class="form-group col-sm-6">
+                            {!! Form::label('tipousuario_id', 'Tipousuario Id:') !!}
+                            {!! Form::select('tipousuario_id', ['1' => '1'], null, ['class' => 'form-control']) !!}
+                        </div>
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label class="col-md-4 control-label">E-Mail Address</label>
 
@@ -65,6 +87,34 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="form-group col-sm-12 col-lg-12">
+                            {!! Form::label('direccion', 'Direccion:') !!}
+                            {!! Form::textarea('direccion', null, ['class' => 'form-control']) !!}
+                        </div>
+
+
+<!-- Documento Id Field -->
+
+
+<!-- Documentoi Field -->
+
+
+<!-- Email Field -->
+
+
+<!-- Password Field -->
+
+
+<!-- Tipousuario Id Field -->
+
+
+<!-- Pais Id Field -->
+
+
+<!-- Direccion Field -->
+
+
+<!-- Submit Field -->
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

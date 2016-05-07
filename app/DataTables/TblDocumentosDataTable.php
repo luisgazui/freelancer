@@ -43,8 +43,10 @@ class TblDocumentosDataTable extends DataTable
     {
         $tblDocumentos = TblDocumentos::join('tbl_paises',
             'tbl_paises.id','=','tbl_documentos.pais_id')
-            ->select('tbl_documentos.id','tbl_documentos.Documento as Documento', 
-                'tbl_paises.Nombre as pais', DB::raw("IF(tbl_documentos.Empresa = 0, 'Particular','Empresa') as Empresa") );
+            ->select('tbl_documentos.id',
+                'tbl_documentos.Documento as Documento', 
+                'tbl_paises.Nombre as pais', 
+                DB::raw("IF(tbl_documentos.Empresa = 0, 'Particular','Empresa') as Empresa") );
 
         return $this->applyScopes($tblDocumentos);
     }

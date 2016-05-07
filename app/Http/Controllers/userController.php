@@ -10,6 +10,8 @@ use FreelancerOnline\Repositories\userRepository;
 use Flash;
 use InfyOm\Generator\Controller\AppBaseController;
 use Response;
+use FreelancerOnline\Models\TblPaises;
+use FreelancerOnline\Models\TblDocumentos;
 
 class userController extends AppBaseController
 {
@@ -39,9 +41,15 @@ class userController extends AppBaseController
      */
     public function create()
     {
-        return view('users.create');
+        $pais = TblPaises::lists('Nombre','id');
+        return view('users.create', compact('pais'));
     }
-
+    public function getdocumentos(Request $request, $id){
+        if($request->ajax()){
+            $documentos = TblDocumentos::documentos($id);
+            return response()->json($towns);
+        }
+    }    
     /**
      * Store a newly created user in storage.
      *
@@ -57,7 +65,7 @@ class userController extends AppBaseController
 
         Flash::success('user saved successfully.');
 
-        return redirect(route('users.index'));
+        return redirect(route('register.index'));
     }
 
     /**
@@ -74,7 +82,7 @@ class userController extends AppBaseController
         if (empty($user)) {
             Flash::error('user not found');
 
-            return redirect(route('users.index'));
+            return redirect(route('register.index'));
         }
 
         return view('users.show')->with('user', $user);
@@ -94,7 +102,7 @@ class userController extends AppBaseController
         if (empty($user)) {
             Flash::error('user not found');
 
-            return redirect(route('users.index'));
+            return redirect(route('register.index'));
         }
 
         return view('users.edit')->with('user', $user);
@@ -115,14 +123,14 @@ class userController extends AppBaseController
         if (empty($user)) {
             Flash::error('user not found');
 
-            return redirect(route('users.index'));
+            return redirect(route('register.index'));
         }
 
         $user = $this->userRepository->update($request->all(), $id);
 
         Flash::success('user updated successfully.');
 
-        return redirect(route('users.index'));
+        return redirect(route('register.index'));
     }
 
     /**
@@ -139,13 +147,13 @@ class userController extends AppBaseController
         if (empty($user)) {
             Flash::error('user not found');
 
-            return redirect(route('users.index'));
+            return redirect(route('register.index'));
         }
 
         $this->userRepository->delete($id);
 
         Flash::success('user deleted successfully.');
 
-        return redirect(route('users.index'));
+        return redirect(route('register.index'));
     }
 }

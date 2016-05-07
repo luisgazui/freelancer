@@ -60,7 +60,10 @@ class TblDocumentos extends Model
         'Pais_id',
         'Empresa'
     ];
-
+    public static function documentos($id){
+        return TblDocumentos::where('pais_id','=',$id)
+        ->get();
+    }
     /**
      * The attributes that should be casted to native types.
      *

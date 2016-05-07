@@ -1,28 +1,49 @@
 <?php
 
-namespace FreelancerOnline;
-
-use Illuminate\Foundation\Auth\User as Authenticatable;
-
-class User extends Authenticatable
+class user extends Model
 {
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'lastname', 'documentoi', 'foto', 'Direccion', 
-        'email', 'password', 'documento_id', 'tipousuario_id', 
-        'pais_id'
+    use SoftDeletes;
+
+    public $table = 'users';
+    
+
+    protected $dates = ['deleted_at'];
+
+
+    public $fillable = [
+        'name',
+        'lastname',
+        'documento_id',
+        'documentoi',
+        'email',
+        'password',
+        'tipousuario_id',
+        'pais_id',
+        'direccion'
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The attributes that should be casted to native types.
      *
      * @var array
      */
-    protected $hidden = [
-        'password', 'remember_token',
+    protected $casts = [
+        'name' => 'string',
+        'lastname' => 'string',
+        'documento_id' => 'integer',
+        'documentoi' => 'string',
+        'email' => 'string',
+        'password' => 'string',
+        'tipousuario_id' => 'integer',
+        'pais_id' => 'integer'
+    ];
+
+    /**
+     * Validation rules
+     *
+     * @var array
+     */
+    public static $rules = [
+        
     ];
 }
