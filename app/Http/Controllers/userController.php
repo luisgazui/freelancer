@@ -11,6 +11,7 @@ use Flash;
 use InfyOm\Generator\Controller\AppBaseController;
 use Response;
 use FreelancerOnline\Models\TblPaises;
+use FreelancerOnline\Models\TblTipousuario;
 use FreelancerOnline\Models\TblDocumentos;
 
 class userController extends AppBaseController
@@ -42,13 +43,15 @@ class userController extends AppBaseController
     public function create()
     {
         $pais = TblPaises::lists('Nombre','id');
-        return view('users.create', compact('pais'));
+        $tusuario = TblTipousuario::lists('tipou','id');
+        return view('users.create', compact('pais','tusuario'));
     }
-    public function getdocumentos(Request $request, $id){
-        if($request->ajax()){
-            $documentos = TblDocumentos::documentos($id);
-            return response()->json($towns);
-        }
+
+    public function getdocumentos($id,$id1){
+        //if($request->ajax()){
+            $documentos = TblDocumentos::documentos($id,$id1);
+            return response()->json($documentos);
+        //}
     }    
     /**
      * Store a newly created user in storage.

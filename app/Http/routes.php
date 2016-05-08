@@ -95,3 +95,4 @@ Route::get('/home', 'HomeController@index');
 
 Route::resource('register', 'userController');
 Route::resource('registeru', 'userController@create');
+Route::get('getdocumentos/{id}/{id1}','userController@getdocumentos');

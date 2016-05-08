@@ -1,9 +1,13 @@
 <?php
-
+/**
+ * Tabla que se encarga de almacenar los documentos de identificacion segun paises
+ * Permite tener el control de 
+ */
 namespace FreelancerOnline\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use FreelancerOnline\Models\TblTipousuario;
 
 /**
  * @SWG\Definition(
@@ -60,10 +64,19 @@ class TblDocumentos extends Model
         'Pais_id',
         'Empresa'
     ];
-    public static function documentos($id){
-        return TblDocumentos::where('pais_id','=',$id)
+
+    public static function documentos($id, $id1){
+        $empresa = TblTipousuario::select('Empresa')
+        ->where('id', '=', $id1)
+        ->get();
+        return TblDocumentos::select('id','Documento')
+        ->where('pais_id','=',$id)
+        ->Where('Empresa', '=', TblTipousuario::select('Empresa')
+        ->where('id', '=', $id1)
+        ->get())
         ->get();
     }
+
     /**
      * The attributes that should be casted to native types.
      *

@@ -2,7 +2,10 @@
 <div class="form-group">
     <label class="col-md-4 control-label">Pais</label>
      <div class="col-md-6">
-        {!! Form::select('pais_id', $pais, null, ['class' => 'form-control']) !!}
+        {!! Form::select('pais_id', $pais, null, ['class' => 'form-control', 
+        'placeholder' => 'Seleccione un pais', 
+        'id' => 'pais_id',
+        ]) !!}
      </div>
 </div>
 
@@ -10,7 +13,7 @@
 <div class="form-group">
     <label class="col-md-4 control-label">Nombres</label>
     <div class="col-md-6">
-        {!! Form::text('name', null, ['class' => 'form-control']) !!}
+        {!! Form::text('name', null, ['class' => 'form-control',]) !!}
     </div>
 </div>
 
@@ -28,14 +31,20 @@
 <div class="form-group">
     <label class="col-md-4 control-label">Tipo de Usuario</label>
      <div class="col-md-6">
-        {!! Form::select('tipousuario_id', ['1' => '1'], null, ['class' => 'form-control']) !!}
+        {!! Form::select('tipousuario_id', $tusuario, null, ['class' => 'form-control',
+        'placeholder' => 'Tipo',
+        'id' => 'tipousuario_id',
+        'disabled']) !!}
     </div>
 </div>
 
 <div class="form-group">
     <label class="col-md-4 control-label">Tipo de Identificacion</label>
      <div class="col-md-6">
-        {!! Form::select('documento_id', ['1' => '1'], null, ['class' => 'form-control']) !!}
+        {!! Form::select('documento_id', ['1' => '1'], null, ['class' => 'form-control',
+        'placeholder' => 'Tipo de documento',
+        'id' => 'documento_id',
+        'disabled']) !!}
     </div>
 </div>
 
@@ -59,13 +68,13 @@
 <div class="form-group">
     <label class="col-md-4 control-label">Password</label>
      <div class="col-md-6">
-        {!! Form::text('password', null, ['class' => 'form-control']) !!}
+        {!! Form::password('password', null, ['class' => 'form-control']) !!}
     </div>
 </div>
 
 <!-- Direccion Field -->
 <div class="form-group">
-    <label class="col-md-4 control-label">Password</label>
+    <label class="col-md-4 control-label">Direccion</label>
      <div class="col-md-6">
         {!! Form::textarea('direccion', null, ['class' => 'form-control']) !!}
     </div>
