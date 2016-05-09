@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('lastname');
-            $table->string('documentoi')->unique();
+            $table->string('documentoi');
             $table->string('foto');
             $table->longtext('Direccion');
             $table->string('email')->unique();
@@ -32,6 +32,7 @@ class CreateUsersTable extends Migration
                 ->on('tbl_paises');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

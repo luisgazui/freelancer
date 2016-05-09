@@ -79,7 +79,7 @@ class user extends Model
         'password',
         'tipousuario_id',
         'pais_id',
-        'direccion'
+        'Direccion'
     ];
 
     /**

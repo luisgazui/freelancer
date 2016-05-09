@@ -15,6 +15,7 @@
         "doctrine/dbal": "~2.3",
         "infyomlabs/adminlte-templates": "dev-master",
         "infyomlabs/generator-builder": "dev-master",
+        "predis/predis":"dev-master",
         "laravel/framework": "5.2.*"
     },
     "require-dev": {

@@ -65,16 +65,20 @@ class TblDocumentos extends Model
         'Empresa'
     ];
 
-    public static function documentos($id, $id1){
+    public static function documentos($id1, $id){
         $empresa = TblTipousuario::select('Empresa')
         ->where('id', '=', $id1)
         ->get();
+
+        foreach($empresa as $empre)
+        {
+        //echo $empre->Empresa;
+        //dd($empresa['Empresa']);
         return TblDocumentos::select('id','Documento')
         ->where('pais_id','=',$id)
-        ->Where('Empresa', '=', TblTipousuario::select('Empresa')
-        ->where('id', '=', $id1)
-        ->get())
+        ->Where('Empresa', '=', $empre->Empresa)
         ->get();
+        }
     }
 
     /**

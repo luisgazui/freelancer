@@ -2,11 +2,11 @@
 
 namespace FreelancerOnline\DataTables;
 
-use FreelancerOnline\Models\user;
+use FreelancerOnline\Models\tblCategoriaemp;
 use Form;
 use Yajra\Datatables\Services\DataTable;
 
-class userDataTable extends DataTable
+class tblCategoriaempDataTable extends DataTable
 {
 
     /**
@@ -18,10 +18,10 @@ class userDataTable extends DataTable
             ->eloquent($this->query())
             ->addColumn('actions', function ($data) {
                             return '
-                            ' . Form::open(['route' => ['register.destroy', $data->id], 'method' => 'delete']) . '
+                            ' . Form::open(['route' => ['tblCategoriaemps.destroy', $data->id], 'method' => 'delete']) . '
                             <div class=\'btn-group\'>
-                                <a href="' . route('register.show', [$data->id]) . '" class=\'btn btn-default btn-xs\'><i class="glyphicon glyphicon-eye-open"></i></a>
-                                <a href="' . route('register.edit', [$data->id]) . '" class=\'btn btn-default btn-xs\'><i class="glyphicon glyphicon-edit"></i></a>
+                                <a href="' . route('tblCategoriaemps.show', [$data->id]) . '" class=\'btn btn-default btn-xs\'><i class="glyphicon glyphicon-eye-open"></i></a>
+                                <a href="' . route('tblCategoriaemps.edit', [$data->id]) . '" class=\'btn btn-default btn-xs\'><i class="glyphicon glyphicon-edit"></i></a>
                                 ' . Form::button('<i class="glyphicon glyphicon-trash"></i>', [
                                 'type' => 'submit',
                                 'class' => 'btn btn-danger btn-xs',
@@ -41,9 +41,9 @@ class userDataTable extends DataTable
      */
     public function query()
     {
-        $users = user::query();
+        $tblCategoriaemps = tblCategoriaemp::query();
 
-        return $this->applyScopes($users);
+        return $this->applyScopes($tblCategoriaemps);
     }
 
     /**
@@ -87,15 +87,7 @@ class userDataTable extends DataTable
     private function getColumns()
     {
         return [
-            'name' => ['name' => 'name', 'data' => 'name'],
-            'lastname' => ['name' => 'lastname', 'data' => 'lastname'],
-            'documento_id' => ['name' => 'documento_id', 'data' => 'documento_id'],
-            'documentoi' => ['name' => 'documentoi', 'data' => 'documentoi'],
-            'email' => ['name' => 'email', 'data' => 'email'],
-            'password' => ['name' => 'password', 'data' => 'password'],
-            'tipousuario_id' => ['name' => 'tipousuario_id', 'data' => 'tipousuario_id'],
-            'pais_id' => ['name' => 'pais_id', 'data' => 'pais_id'],
-            'Direccion' => ['name' => 'Direccion', 'data' => 'Direccion']
+            'catemp' => ['name' => 'catemp', 'data' => 'catemp']
         ];
     }
 
@@ -106,6 +98,6 @@ class userDataTable extends DataTable
      */
     protected function filename()
     {
-        return 'users';
+        return 'tblCategoriaemps';
     }
 }

@@ -76,12 +76,12 @@
 <div class="form-group">
     <label class="col-md-4 control-label">Direccion</label>
      <div class="col-md-6">
-        {!! Form::textarea('direccion', null, ['class' => 'form-control']) !!}
+        {!! Form::textarea('Direccion', null, ['class' => 'form-control']) !!}
     </div>
 </div>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
         {!! Form::submit('Registrar', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('register.index') !!}" class="btn btn-default">Cancel</a>
+    <a href="{!! url('/home') !!}" class="btn btn-default">Cancel</a>
 </div>

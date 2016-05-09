@@ -62,13 +62,26 @@ class userController extends AppBaseController
      */
     public function store(CreateuserRequest $request)
     {
-        $input = $request->all();
+        //$input = $request->all();
 
-        $user = $this->userRepository->create($input);
+        //$user = $this->userRepository->create($input);
 
-        Flash::success('user saved successfully.');
+        //Flash::success('user saved successfully.');
 
-        return redirect(route('register.index'));
+        //$user = New User;
+        \FreelancerOnline\Models\user::create([
+            'name'            => $request['name'],
+            'lastname'        => $request['lastname'],
+            'documentoi'      => $request['documentoi'],
+            'Direccion'       => $request['Direccion'],
+            'email'           => $request['email'],
+            'password'        => bcrypt($request['password']),
+            'documento_id'    => $request['documento_id'],
+            'tipousuario_id'  => $request['tipousuario_id'],
+            'pais_id'         => $request['pais_id'],
+        ]);
+
+        return redirect(route('/home'));
     }
 
     /**

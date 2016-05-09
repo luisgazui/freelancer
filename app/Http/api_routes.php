@@ -59,3 +59,9 @@ Route::resource('tblTipoInstrumentos', 'TblTipoInstrumentoAPIController');
 Route::resource('tblStatusproyectos', 'TblStatusproyectoAPIController');
 
 Route::resource('users', 'userAPIController');
+
+Route::resource('tblCategoriaemps', 'tblCategoriaempAPIController');
+
+Route::resource('usrEmpresas', 'usrEmpresaAPIController');
+
+Route::resource('tblCodpais', 'tblCodpaisAPIController');

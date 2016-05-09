@@ -36,20 +36,20 @@ Route::get('field_template', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuil
 Route::post('generator_builder/generate', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generate');
 
 Route::get('login', 'Auth\AuthController@getLogin');
+
 Route::post('login', 'Auth\AuthController@postLogin');
+
 Route::get('logout', 'Auth\AuthController@logout');
 
-// Registration Routes...
-//Route::get('register', 'Auth\AuthController@getRegister');
-//Route::post('register', 'Auth\AuthController@postRegister');
-
-// Password Reset Routes...
 Route::get('password/reset', 'Auth\PasswordController@getEmail');
+
 Route::post('password/email', 'Auth\PasswordController@postEmail');
+
 Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
+
 Route::post('password/reset', 'Auth\PasswordController@postReset');
 
-Route::get('/home', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
 Route::resource('tblPaises', 'TblPaisesController');
 
@@ -94,5 +94,11 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('register', 'userController');
+
 Route::resource('registeru', 'userController@create');
+
 Route::get('getdocumentos/{id}/{id1}','userController@getdocumentos');
+
+Route::resource('tblCategoriaemps', 'tblCategoriaempController');
+
+Route::resource('tblCodpais', 'tblCodpaisController');

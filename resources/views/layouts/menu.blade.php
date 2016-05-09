@@ -1,44 +1,11 @@
 
 
-
-<li class="{{ Request::is('documentos*') ? 'active' : '' }}">
-    <a href="{!! route('documentos.index') !!}">Documentos</a>
-</li>
-
-<li class="{{ Request::is('bancos*') ? 'active' : '' }}">
-    <a href="{!! route('bancos.index') !!}">bancos</a>
-</li>
-
-<li class="{{ Request::is('experiencias*') ? 'active' : '' }}">
-    <a href="{!! route('experiencias.index') !!}">experiencias</a>
-</li>
-
-<li class="{{ Request::is('categorias*') ? 'active' : '' }}">
-    <a href="{!! route('categorias.index') !!}">categorias</a>
-</li>
-
-<li class="{{ Request::is('tblPaises*') ? 'active' : '' }}">
-    <a href="{!! route('tblPaises.index') !!}">TblPaises</a>
-</li>
-
 <li class="{{ Request::is('tblPaises*') ? 'active' : '' }}">
     <a href="{!! route('tblPaises.index') !!}">TblPaises</a>
 </li>
 
 <li class="{{ Request::is('tblBancos*') ? 'active' : '' }}">
     <a href="{!! route('tblBancos.index') !!}">TblBancos</a>
-</li>
-
-<li class="{{ Request::is('tblBancos*') ? 'active' : '' }}">
-    <a href="{!! route('tblBancos.index') !!}">TblBancos</a>
-</li>
-
-<li class="{{ Request::is('tblBancos*') ? 'active' : '' }}">
-    <a href="{!! route('tblBancos.index') !!}">TblBancos</a>
-</li>
-
-<li class="{{ Request::is('tblDocumentos*') ? 'active' : '' }}">
-    <a href="{!! route('tblDocumentos.index') !!}">TblDocumentos</a>
 </li>
 
 <li class="{{ Request::is('tblDocumentos*') ? 'active' : '' }}">
@@ -109,7 +76,16 @@
     <a href="{!! route('tblStatusproyectos.index') !!}">TblStatusproyectos</a>
 </li>
 
-<li class="{{ Request::is('users*') ? 'active' : '' }}">
-    <a href="{!! route('users.index') !!}">users</a>
+
+<li class="{{ Request::is('tblCategoriaemps*') ? 'active' : '' }}">
+    <a href="{!! route('tblCategoriaemps.index') !!}">tblCategoriaemps</a>
+</li>
+
+<li class="{{ Request::is('usrEmpresas*') ? 'active' : '' }}">
+    <a href="{!! route('usrEmpresas.index') !!}">usrEmpresas</a>
+</li>
+
+<li class="{{ Request::is('tblCodpais*') ? 'active' : '' }}">
+    <a href="{!! route('tblCodpais.index') !!}">tblCodpais</a>
 </li>
 
